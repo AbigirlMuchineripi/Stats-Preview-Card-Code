@@ -189,27 +189,20 @@ span{
   
   }
   .stats-wrapper{
-    margin-top: 2.5rem;
+    margin-top: 4.44rem;
     display:flex;
-    flex-flow: column;
-    gap:1.5rem;
-    align-items: center;
+    flex-flow: row; 
+   
   }
   .companies-number,
   .templates-number,
   .queries-number{
-    font: var(--STATS-MOB);
-    color: var(--WHITE);
-    letter-spacing: 0px;
+  font: var(--STATS);
+
   }
   .label{
-    font: var(--LABEL-MOB);
-    color: var(--WHITE);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font: var(--LABEL);
   }
-
-
   
 }
 
