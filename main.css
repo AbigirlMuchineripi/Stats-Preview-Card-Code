@@ -86,7 +86,7 @@ h1{
   height:780px;
   background-color: var(--CARD-BG);
   margin:5.5rem 1.5rem;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: var(--SHADOW);
   display: flex;
   flex-flow: column;
@@ -152,7 +152,68 @@ span{
   text-transform: uppercase;
 }
 /*DESKTOP DESIGN*/
+@media screen and (min-width:720px){
+  .main-card{
+    width: 1110px;
+    height: 446px;
+    flex-flow: row-reverse;
+    margin:11.06rem 10.31rem;
 
+  }
+  .main-card-hero{
+    width: 540px;
+    height: 446px;
+
+  }
+  .main-card-hero-overlay{
+    border-radius:0 8px 8px 0;
+  }
+  .main-hero-mobile img{
+    border-radius: 0 8px 8px 0;
+  }
+  .main-card-details{
+    padding: 71px 95px 25px 72px;
+    height:403px;
+    width: 88px;
+  }
+  .main-card-details-subtext {
+    font:var(--TITLE);
+    margin-top: 1.56rem;
+  }
+  span{
+    font:var(--TITLE-MOB);
+    color:var(--PURPLE);
+  }
+  .main-card-details-title {
+   font: var(--DETAILS-MOB);
+   color: var(--WHITE);
+   margin-top: 1rem;
+  
+  }
+  .stats-wrapper{
+    margin-top: 2.5rem;
+    display:flex;
+    flex-flow: column;
+    gap:1.5rem;
+    align-items: center;
+  }
+  .companies-number,
+  .templates-number,
+  .queries-number{
+    font: var(--STATS-MOB);
+    color: var(--WHITE);
+    letter-spacing: 0px;
+  }
+  .label{
+    font: var(--LABEL-MOB);
+    color: var(--WHITE);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+
+  
+}
 
 
 
