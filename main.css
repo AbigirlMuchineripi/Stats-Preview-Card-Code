@@ -158,6 +158,7 @@ span{
     height: 446px;
     flex-flow: row-reverse;
     margin:11.06rem 10.31rem;
+   
 
   }
   .main-card-hero{
@@ -172,7 +173,7 @@ span{
     border-radius: 0 8px 8px 0;
   }
   .main-card-details{
-    padding: 71px 95px 25px 72px;
+    padding: 4.44rem 5.94rem 1.56rem 4.45rem;
     height:403px;
     width: 88px;
   }
@@ -198,10 +199,12 @@ span{
   .templates-number,
   .queries-number{
   font: var(--STATS);
+  text-align: left;
 
   }
   .label{
     font: var(--LABEL);
+   text-align: left;
   }
   
 }
