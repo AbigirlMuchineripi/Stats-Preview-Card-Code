@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
 /* || RESET */
 * {
   padding: 0;
@@ -25,8 +25,9 @@ img {
   --SHADOW:0px 20px 20px -10px hsla(233, 27%, 13%, 20.31%);
 
   /* TYPOGRAPHY */
-  --FF1:"Inter", sans-serif;
-  --FF2:"Lexend Deca",sans-serif;
+  --FF1: "Inter", sans-serif;
+  --FF2: "Lexend Deca", sans-serif;
+
 
   --TITLE-MOB:bold 28/32 var(--FF1);
   --DETAILS-MOB:normal 15/25 var(--FF1);
@@ -73,6 +74,7 @@ body {
   place-content:center;
   background-color: var(--MAIN-BG);
  
+ 
 }
 
 h1{
@@ -96,18 +98,23 @@ h1{
   width:327px;
   height:240px;
   position:relative;
+  border-radius: 8px 8px 0 0;
 }
 .main-card-hero-overlay{
   position:absolute;
-  background-color: hsla(277,64%, 61%, 0.5);
-  border-radius: 8px 8px 0 0;
-  z-index: -2;
   top:0;
   left: 0;
+  width: 100%;
+  height:116%;
+  background-color: hsla(277,64%, 61%, 0.5); 
+  border-radius: 8px 8px 0 0;
+  z-index: 1;
+  
 }
 .main-hero-mobile img{
   border-radius: 8px 8px 0 0;
   position:absolute;
+  z-index: 0;
   height:115%;
   width: 100%;  
 }
@@ -153,62 +160,8 @@ span{
 }
 /*DESKTOP DESIGN*/
 @media screen and (min-width:720px){
-  .main-card{
-    width: 1110px;
-    height: 446px;
-    flex-flow: row-reverse;
-    margin:11.06rem 10.31rem;
-   
-
-  }
-  .main-card-hero{
-    width: 540px;
-    height: 446px;
-
-  }
-  .main-card-hero-overlay{
-    border-radius:0 8px 8px 0;
-  }
-  .main-hero-mobile img{
-    border-radius: 0 8px 8px 0;
-  }
-  .main-card-details{
-    padding: 4.44rem 5.94rem 1.56rem 4.45rem;
-    height:403px;
-    width: 88px;
-  }
- .main-card-details-title{
-    font:var(--TITLE);
-    margin-top: 1.56rem;
-  }
-  span{
-    font:var(--TITLE);   
-  }
-  .main-card-details-subtext  {
-   font: var(--DETAILS);
-   margin-top: 1rem;
-  
-  }
-  .stats-wrapper{
-    margin-top: 4.44rem;
-    display:flex;
-    flex-flow: row; 
-   
-  }
-  .companies-number,
-  .templates-number,
-  .queries-number{
-  font: var(--STATS);
-  text-align: left;
-
-  }
-  .label{
-    font: var(--LABEL);
-   text-align: left;
-  }
   
 }
-
 
 
 
