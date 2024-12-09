@@ -116,7 +116,7 @@ h1{
   height:540px;
   width: 327px;
 }
-.main-card-details-subtext {
+.main-card-details-title{
   font:var(--TITLE-MOB);
   color:var(--WHITE); 
   margin-top: 2.5rem;
@@ -125,7 +125,7 @@ span{
   font:var(--TITLE-MOB);
   color:var(--PURPLE);
 }
-.main-card-details-title {
+.main-card-details-subtext {
  font: var(--DETAILS-MOB);
  color: var(--WHITE);
  margin-top: 1rem;
@@ -176,17 +176,15 @@ span{
     height:403px;
     width: 88px;
   }
-  .main-card-details-subtext {
+ .main-card-details-title{
     font:var(--TITLE);
     margin-top: 1.56rem;
   }
   span{
-    font:var(--TITLE-MOB);
-    color:var(--PURPLE);
+    font:var(--TITLE);   
   }
-  .main-card-details-title {
-   font: var(--DETAILS-MOB);
-   color: var(--WHITE);
+  .main-card-details-subtext  {
+   font: var(--DETAILS);
    margin-top: 1rem;
   
   }
