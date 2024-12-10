@@ -23,22 +23,24 @@ img {
 
   /*SHADOWS*/
   --SHADOW:0px 20px 20px -10px hsla(233, 27%, 13%, 20.31%);
+  --SHADOW-DESKTOP: 0px 20px 20px -10px hsla(233, 28%, 13% 25%);
+  --TEXT-SHADOW:0 4px 4px 0 hsla(0, 0%, 0%, 0.25);
 
   /* TYPOGRAPHY */
   --FF1: "Inter", sans-serif;
   --FF2: "Lexend Deca", sans-serif;
 
 
-  --TITLE-MOB:bold 28/32 var(--FF1);
-  --DETAILS-MOB:normal 15/25 var(--FF1);
-  --STATS-MOB: bold 24 var(--FF1);
-  --LABEL-MOB: normal 12/25 var(--FF2);
+  --TITLE-MOB:bold 1.75rem/2rem var(--FF1);
+  --DETAILS-MOB:normal 0.94rem/1.56rem var(--FF1);
+  --STATS-MOB: bold 1.5rem var(--FF1);
+  --LABEL-MOB: normal 0.75rem/1.56rem var(--FF2);
 
   /*DESKTOP*/
-  --TITLE:bold 36/44 var(--FF1);
-  --DETAILS:normal 15/25 var(--FF1);
-  --STATS: bold 24 var(--FF1);
-  --LABEL: normal 12/25 var(--FF2);
+  --TITLE:bold 2.25rem/2.75rem var(--FF1);
+  --DETAILS:normal 0.94rem/1.56rem var(--FF1);
+  --STATS: bold 1.5rem var(--FF1);
+  --LABEL: normal 0.75rem/1.56rem var(--FF2);
 }
 
 /* || UTILITY CLASSES */
@@ -127,15 +129,21 @@ h1{
   font:var(--TITLE-MOB);
   color:var(--WHITE); 
   margin-top: 2.5rem;
+  text-shadow: var(--TEXT-SHADOW);
+  opacity: 100%;
 }
 span{
   font:var(--TITLE-MOB);
   color:var(--PURPLE);
+  text-shadow: var(--TEXT-SHADOW);
+  opacity: 100%;
 }
 .main-card-details-subtext {
  font: var(--DETAILS-MOB);
  color: var(--WHITE);
  margin-top: 1rem;
+ text-shadow: var(--TEXT-SHADOW);
+ opacity: 75%;
 
 }
 .stats-wrapper{
@@ -151,18 +159,79 @@ span{
   font: var(--STATS-MOB);
   color: var(--WHITE);
   letter-spacing: 0px;
+  text-shadow: var(--TEXT-SHADOW);
+  opacity: 100%;
 }
 .label{
   font: var(--LABEL-MOB);
   color: var(--WHITE);
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-shadow: var(--TEXT-SHADOW);
+  opacity: 60%;
 }
 /*DESKTOP DESIGN*/
 @media screen and (min-width:720px){
+  .main-card{
+    width:1110px;
+    height:446px;    
+    margin: 11.06rem 10.31rem ;
+    box-shadow: var(--SHADOW-DESKTOP);
+    display: flex;
+    flex-flow: row-reverse;
+
+  }
+  .main-card-hero{
+    width:540px;
+    height: 446px;
+    
+    
+  }.main-card-hero-overlay{
+    height:100%;
+  }
+  
+  .main-hero-mobile img{
+    border-radius: 8px 8px 0 0;
+    position:absolute;
+    z-index: 0;
+    height:100%;
+    width: 100%;  
+  }
+  .main-card-details{
+    padding: 4.44rem 5.69rem 3.69rem 4.47rem;
+    height:446px;
+    width: 570px;
+  }
+  .main-card-details-title{
+    font:var(--TITLE);    
+  }
+  span{
+    font:var(--TITLE);   
+  }
+  .main-card-details-subtext {
+   font: var(--DETAILS);
+   color: var(--WHITE);
+   margin-top: 1rem;  
+  }
+  .stats-wrapper{
+    margin-top: 4.5rem;   
+    flex-flow: row-reverse;
+    gap:4rem;
+    left:-1px;
+    
+  }
+  .companies-number,
+  .templates-number,
+  .queries-number{
+    font: var(--STATS);  
+  }
+  .label{
+    font: var(--LABEL);
+    margin-bottom: 3.69rem;
+  
+  }
   
 }
-
 
 
 
